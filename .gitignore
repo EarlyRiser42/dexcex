@@ -2,6 +2,7 @@
 
 # dependencies
 /venv
+/__pycache__
 
 # misc
 .env

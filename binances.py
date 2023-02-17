@@ -1,6 +1,6 @@
 import ccxt
 from config import binance_id, binance_hash
-
+from binance.client import Client
 
 def spot_balance():
     balance = binance.fetch_balance()['USDT']
@@ -47,3 +47,6 @@ binance = ccxt.binance(config={
     'apiKey': binance_id,
     'secret': binance_hash
 })
+
+client = Client(binance_id, binance_hash)
+
